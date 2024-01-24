@@ -8,43 +8,52 @@
   </head>
   <body>
     <main>
-      <form action="/submit">
+      <form action="">
         <h1>Form</h1>
-        <label>
-          Name:
-          <input type="text" name="name" placeholder="Full Name" />
-        </label>
+        <div>
+          <label for="username">Name</label>
+          <input 
+            type="text" 
+            name="username" 
+            id="username" 
+            placeholder="Full Name" 
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="name@pdx.edu"
+          />
+        </div>
         <br />
-        <label>
-          Email:
-          <input type="text" name="email" placeholder="name@pdx.edu" />
-        </label>
-        <br /><br />
+        <div>
         <fieldset>
           <legend>Favorite Character:</legend>
-          <label>
-            <input type="radio" name="radio" value="Spongebob" /> Spongebob
-          </label>
-          <br />
-          <label>
-            <input type="radio" name="radio" value="Sandy" /> Sandy
-          </label>
-          <br />
-          <label>
-            <input type="radio" name="radio" value="Patrick" /> Patrick
-          </label>
+            <input type="radio" name="character" id="spongebob" /> 
+            <label for="spongebob">Spongebob</label>
+            <br />
+            <input type="radio" name="character" id="sandy" /> 
+            <label for="sandy">Sandy</label>
+            <br />
+            <input type="radio" name="character" id="patrick" /> 
+            <label for="patrick">Patrick</label>
         </fieldset>
         <br />
         <fieldset>
           <legend>Are you a fan of the show?</legend>
-          <input type="checkbox" id="option1" name="option1" value="Bike" />
+          <input type="checkbox" name="episodes" id="option1" />
           <label for="option1"> Yes, I have watched all episodes!</label><br />
-          <input type="checkbox" id="option2" name="option2" value="Car" />
-          <label for="option2"> Yes, it's got the best memes.</label><br />
+          <input type="checkbox" name="episodes" id="option2" />
+          <label for="option2"> Yes, it's got the best memes.</label>
         </fieldset>
         <br />
-        <input type="submit" value="Submit" />
-        <input type="reset" value="Reset" />
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>  
       </form>
     </main>
   </body>
