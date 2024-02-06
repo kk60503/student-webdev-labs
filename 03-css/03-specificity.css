@@ -1,5 +1,12 @@
 /* Specificity Exercise */
 
+/* X - Y - Z */
+
+/* 0-1-2 */
+/* 1-0-1 */
+/* 0-0-10 */
+/* 0-1-0 */
+
 nav .list-item > a {
   color: var(--purple);
 }
@@ -16,7 +23,7 @@ section .main::first-line {
   color: var(--purple);
 }
 
-nav ul.menu li#first a:not([class='visited']) {
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
 
