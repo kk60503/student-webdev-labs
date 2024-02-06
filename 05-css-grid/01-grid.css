@@ -1,17 +1,39 @@
 .grid-container {
+  display: grid;
+  gap: 10px;
   background-color: rgb(190, 190, 231);
 }
 
-/* Grid Container 1 */
+.grid-container-1 {
+  grid-template-columns: 1fr 3fr 1fr;
+}
 
-/* Grid Container 2 */
+.grid-container-2 {
+  height: 400px;
+  grid-template-columns: 20% 40% 20% 20%;
+  grid-template-rows: 1fr 4fr;
+}
 
-/* use height: 400px; on the container */
+.grid-container-3 {
+  height: 400px;
+  grid-template-columns: 10% 45% 45%;
+  grid-template-rows: 1fr 2fr 2fr;
+}
 
-/* Grid Container 3 */
+.grid-container-3 .item8 {
+  grid-column: span 2;
+}
 
-/* use height: 400px; on the container */
+.grid-container-4 {
+  height: 600px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(5, 1fr);
+}
 
-/* Grid Container 4 */
+.grid-container-4 .item1 {
+  grid-row: span 2;
+}
 
-/* use height: 600px; on the container */
+.grid-container-4 .item6 {
+  grid-column: span 2;
+}
